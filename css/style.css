@@ -1,0 +1,153 @@
+body{
+	background-color: #000;
+	font-family: Arial, sans-serif;
+	color: #fff;
+}
+
+.navBar{
+	font-size: 12pt;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.navBar li{
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-right:30px;
+}
+
+.leftBorderNav{
+	border-left: 2px solid #0c9d5f;
+}
+
+.navBar a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.navBar a:hover{
+	color:#0c9d5f;
+	text-decoration: none;
+}
+
+.headerImage{
+	width: 100%;
+	border-top: 8px solid #0c9d5f;
+	border-bottom: 24px solid #0c9d5f;
+}
+
+.logoImage{
+	height:112px; 
+	margin-top: -119px;
+	position: absolute;
+	margin-left: 10%;
+}
+
+.text-body{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.title{
+	font-size: 32pt;
+	font-style: bold;
+	margin-top: 34px;	
+	padding-bottom: 32px;
+}
+
+.content{
+	font-size: 16pt;
+	line-height: 1.2;
+	padding-bottom: 32px;
+}
+
+hr{
+	width:80%;
+	margin-left: 10%;
+	margin-right:10%;
+}
+
+.projectImage{
+	height:310px;
+	margin-bottom: 45px;
+}
+
+footer{
+	background-color: #0c9d5f;
+	font-size: 10pt;
+	min-height: 96px;
+	width: 100%;
+	margin-left: 0;
+	padding-right: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footText{
+	font-size: 12pt;
+	margin-left: 10%;
+	line-height: 1.2;
+}
+
+.footText a{
+	text-decoration: none;
+	color:#fff;
+}
+
+.footText a:hover{
+	color:#000;
+	text-decoration: none;
+}
+footer .icons li{
+	border-radius:1.25rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 6px 5px;
+	border: 1px inset #a6a6a6;
+	text-align: center;
+	float: right;
+}
+
+.icons{
+	margin-right: 10%;
+}
+
+.twitter{
+	color: #fff;
+}
+
+.fa{
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1;
+}
+
+.fa-twitter:before{
+	content: "\f099";
+}
+
+.facebook{
+	color:#fff;
+}
+
+.fa-facebook:before {
+	content:"\f09a";
+}
+/*
+.social .copy{
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838;
+}
+*/
