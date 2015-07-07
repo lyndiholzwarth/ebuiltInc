@@ -32,16 +32,25 @@ body{
 }
 
 .headerImage{
+	position: relative;
+	top: 0;
+	left: 0;
 	width: 100%;
+	display: inline-block;
+	vertical-align: bottom;
 	border-top: 8px solid #0c9d5f;
 	border-bottom: 24px solid #0c9d5f;
+	z-index: 1;
 }
 
 .logoImage{
-	height:112px; 
-	margin-top: -119px;
-	position: absolute;
-	margin-left: 10%;
+	position: absolute; 
+	top: 84%; 
+	left: 10%; 
+	height: 112px; 
+	vertical-align: bottom;
+	display: inline;
+	z-index: 9999;
 }
 
 .text-body{
