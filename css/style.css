@@ -14,10 +14,7 @@ body{
 
 .navBar li{
 	display: inline-block;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 30px;
-	padding-right:30px;
+	padding: 5px 30px;
 }
 
 .leftBorderNav{
@@ -55,7 +52,7 @@ body{
 
 .title{
 	font-size: 32pt;
-	font-style: bold;
+	font-weight: 400;
 	margin-top: 34px;	
 	padding-bottom: 32px;
 }
@@ -107,7 +104,6 @@ footer .icons li{
 	border-radius:1.25rem;
 	width: 2.5rem;
 	height: 2.5rem;
-	display: inline-block;
 	margin: 20px 10px;
 	padding: 6px 5px;
 	border: 1px inset #a6a6a6;
