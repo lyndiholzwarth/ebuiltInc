@@ -46,8 +46,6 @@ body{
 }
 
 .headerImage{
-	position: absolute;
-	/*top: 58px;*/
 	left: 0;
 	padding: 0;
 	margin: 0 auto;
@@ -55,20 +53,19 @@ body{
 	overflow: hidden;
 	vertical-align: baseline;
 	border-bottom: 24px solid #0c9d5f;
-	z-index: 0;
+	z-index: 1;
+	overflow: hidden;
 }
 
 .logoImage{
 	position: absolute; 
-	/*top: 80%; */
-	/*left: 10%; */
 	height: 112px; 
 	vertical-align: baseline;
 	display: inline-block;
 	z-index: 9998;
-	/*top: 80%;*/
-  left: 10%;
-  transform: translate(-10%, -103%);
+ 	left: 10%;
+  	transform: translate(-10%, -103%);
+  	overflow: hidden;
 }
 
 .text-body{
@@ -167,10 +164,31 @@ footer .icons li{
 .fa-facebook:before {
 	content:"\f09a";
 }
-/*
-.social .copy{
-	font-size: 0.9rem;
-	font-weight: 300;
-	color: #838;
+
+
+/*----responive fixes*-----/
+
+/* Medium devices */
+@media (max-width: 992px) {
+	.logoImage{
+			height: 80px; 
+		}
 }
-*/
+
+/* Small devices */
+@media (max-width: 768px) {
+	.logoImage{
+		height: 60px; 
+	}
+}
+
+/* Mini devices (phones, etc*/
+@media (max-width: 568px) {
+	.logoImage{
+		height: 30px; 
+	}
+	.headerImage{
+		border-bottom: 12px solid #0c9d5f;
+	}
+}
+
