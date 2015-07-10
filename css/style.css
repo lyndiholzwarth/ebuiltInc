@@ -167,5 +167,23 @@ footer .icons li{
 
 /*----responive fixes*-----*/
 
+@media (max-width: 1200px) {
+	.projectImage{
+		height:210px;
+	}
+}
 
+/* Medium devices */
+@media (max-width: 992px) {
+	.projectImage{
+		height:150px;
+	}
+}
+
+/* Small devices */
+@media (max-width: 768px) {
+	.projectImage{
+		height:210px;
+	}
+}
 
