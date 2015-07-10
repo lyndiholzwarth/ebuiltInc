@@ -52,7 +52,6 @@ body{
 	width: 100%;
 	overflow: hidden;
 	vertical-align: baseline;
-	border-bottom: 24px solid #0c9d5f;
 	z-index: 1;
 	overflow: hidden;
 }
@@ -166,29 +165,7 @@ footer .icons li{
 }
 
 
-/*----responive fixes*-----/
+/*----responive fixes*-----*/
 
-/* Medium devices */
-@media (max-width: 992px) {
-	.logoImage{
-			height: 80px; 
-		}
-}
 
-/* Small devices */
-@media (max-width: 768px) {
-	.logoImage{
-		height: 60px; 
-	}
-}
-
-/* Mini devices (phones, etc*/
-@media (max-width: 568px) {
-	.logoImage{
-		height: 30px; 
-	}
-	.headerImage{
-		border-bottom: 12px solid #0c9d5f;
-	}
-}
 

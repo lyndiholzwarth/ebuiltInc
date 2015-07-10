@@ -15,6 +15,14 @@
 	<script src="js/app.js"></script>
 	<!--fontawesome-->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!--picturefill patch-->
+	<script>
+    	// Picture element HTML5 shiv
+    	document.createElement( "picture" );
+  	</script>
+  	<script src="js/picturefill.min.js" async></script>
+
+
 	<title>EbuiltInc - Home</title>
 </head>
 
@@ -31,9 +39,14 @@
 	</div>
 </nav>
 
+<main>
 <div class="row">
-	<img src="images/header-img-cropped.jpg" alt="" class="headerImage img-responsive">
-	<img src="images/EBuilt_Logo_Sign-trans-white.png" alt="Ebuilt Logo" class="logoImage">
+	<figure class="headerImage">
+		<img src="images/Header-1600px.jpg" 
+			srcset="images/Header-1600px.jpg 1600w,images/Header-1200.jpg 1200w, images/Header-800px.jpg 800w, images/Header-600px.jpg 600w"
+			alt="" />
+	</figure>
+
 </div>
 
 <div class="row">
@@ -44,18 +57,19 @@
 		<hr>
 		<h1 class="title">Featured Projects</h1>	
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<img src="images/gallery-home-th-icehouse.jpg" alt="" class="projectImage">
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<img src="images/gallery-home-th-icehouse.jpg" alt="" class="projectImage">
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<img src="images/gallery-home-th-icehouse.jpg" alt="" class="projectImage">
 			</div>
 		</div>
 	</div>
 </div>
+</main>
 
 <div class="row">
 <footer>
