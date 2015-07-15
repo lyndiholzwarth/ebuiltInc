@@ -164,7 +164,138 @@ footer .icons li{
 	content:"\f09a";
 }
 
+.list{
+    font-family: FontAwesome;
+    font-size:23px;
+    line-height:30px;
+    margin-left:20px;
+    margin-right:20px;
+    color:#ffffff;
+    list-style-type:none;
+    
+}
 
+.list a{
+    font-family: FontAwesome;
+    font-size:23px;
+    line-height:30px;
+    margin-left:20px;
+    margin-right:20px;
+    color:#ffffff;
+    list-style-type:none;
+    
+}
+
+
+.list a:hover{
+    font-family: FontAwesome;
+    font-size:23px;
+    line-height:30px;
+    margin-left:20px;
+    margin-right:20px;
+    color:#0c9d5f;
+    list-style-type:none;
+    text-decoration: none;
+    
+}
+
+
+/*-----These control the image hover effect on the project page-----*/
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ 
+ul.img-list li {
+  display: inline-block;
+  height: 125px;
+  position: relative;
+  width: 125px;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 125px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 125px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+ 
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+/*----END HOVER EFFECT SPECIFIC CLASSES-----*/
+
+/*----Map page---*/
+.companyInfo{
+	float: left;
+}
+
+.info{
+	display: inline-block;
+	font-size: 14pt;
+	line-height: 1.2;
+	vertical-align: middle;
+}
+
+.companyInfo li i{
+	border-radius:2.25rem;
+	width: 3.5rem;
+	height: 3.5rem;
+	margin: 20px 10px;
+	padding: 4px 6px;
+	border: 1px solid #fff;
+	text-align: center;
+	background: #0c9d5f;
+	vertical-align: middle;
+}
+
+.fa.fa-fax{
+	padding-top: 9px;
+}
+
+.indent{
+	width:90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#map-canvas{
+	height: 400px;
+	width: 400px;
+	margin: 0; 
+	padding: 0;
+}
+
+#emailSubmit{
+	float:right;
+	margin-bottom: 30px;
+	background: #0c9d5f;
+	width: 100px;
+}
+
+#emailSubmit:hover{
+	background: #fff;
+	color: #0c9d5f;
+}
 /*----responive fixes*-----*/
 
 @media (max-width: 1200px) {
@@ -176,14 +307,15 @@ footer .icons li{
 /* Medium devices */
 @media (max-width: 992px) {
 	.projectImage{
-		height:150px;
+		height:310px;
 	}
 }
 
 /* Small devices */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 	.projectImage{
 		height:210px;
 	}
 }
 
+*/
