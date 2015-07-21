@@ -4,19 +4,38 @@ body{
 	color: #fff;
 }
 
-.navBar{
-	font-size: 12pt;
-	font-weight: bold;
-	/*margin-top: 15px;*/
-	margin-bottom: 17px;
-	text-align: center;
+img {
+  max-width: 100%;
+  width: auto   9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.logo{
+	height:110px;
+	margin-top: 0;
+	padding-left: 50px;
+	padding-top: 10px;
+}
+
+.nav{
 	position: fixed;
-	z-index: 9999;
-	height: 58px;
+	height: 113px;
 	width: 100%;
+	z-index: 9999;
+	margin-bottom: 17px;
 	background-color: #000;
-	border-bottom: 8px solid #0c9d5f;
-	border-top: 15px solid #000;
+	border-bottom: 20px solid #0c9d5f;
+}
+
+.navBar{
+	float: right;
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 33px;
 }
 
 .navBar li{
@@ -36,6 +55,36 @@ body{
 .navBar a:hover{
 	color:#0c9d5f;
 	text-decoration: none;
+}
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-top: 112px;
+  margin-bottom: 20px;
+  padding: 0;
+
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  max-width: none;
+  border-bottom: 20px solid #0c9d5f;
 }
 
 .img-container{
@@ -199,6 +248,14 @@ footer .icons li{
     
 }
 
+.thankYou{
+	font-family: FontAwesome;
+	font-size:25px;
+	margin-bottom:30px;
+	
+	
+}
+
 
 /*-----These control the image hover effect on the project page-----*/
 
@@ -302,12 +359,47 @@ ul.img-list li:hover span.text-content {
 	.projectImage{
 		height:210px;
 	}
+	.logo{
+		height:80px;
+	}
+	.nav{
+		height: 81px;
+		border-bottom: 13px solid #0c9d5f;
+	}
+	.navBar{
+		font-size: 12pt;
+		padding-top: 23px;
+	}
+	.carousel {
+		margin-top: 81px;
+	}
+	.carousel, .carousel .item, .carousel .item{
+		height: 400px;
+	}
 }
 
 /* Medium devices */
 @media (max-width: 992px) {
 	.projectImage{
 		height:310px;
+	}
+	.logo{
+		height:60px;
+	}
+	.nav{
+		height: 62px;
+		border-bottom: 11px solid #0c9d5f;
+	}
+	.navBar{
+		font-size: 10pt;
+		padding-top: 18px;
+	}
+	.carousel {
+		margin-top: 62px;
+		margin-bottom: 15px;
+	}
+	.carousel, .carousel .item, .carousel .item{
+		height: 400px;
 	}
 }
 
