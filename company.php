@@ -4,6 +4,10 @@ $email = $_POST['email1'];
 $name = $_POST['name1'];
 $phone = $_POST['phone1'];
 $message = $_POST['message1'];
+$to = "e_czekner@hotmail.com";
+$from = $_POST['email1'];
+$subject = "New Ebuilt contact message";
+
 
 ?>
 
@@ -46,7 +50,7 @@ $message = $_POST['message1'];
 	    <li><a href="index.html">HOME</a></li>
       <li class="leftBorderNav"><a href="services.html">SERVICES</a></li>
       <li class="leftBorderNav"><a href="projects.html">PROJECTS</a></li>
-      <li class="leftBorderNav"><a href="company.html">COMPANY</a></li>
+      <li class="leftBorderNav"><a href="company.php">COMPANY</a></li>
     </ul>
 	</div>
 </nav>
@@ -88,6 +92,20 @@ $message = $_POST['message1'];
 </div>
  <?PHP
  if(isset($_POST['emailSubmit'])) {
+	 
+	 $headers = $_POST['email'];
+
+$msg = "You have a new message from $name. \n 
+		$message \n
+		$name's email is $email \n
+		and the phone number is $phone ";
+			
+// send email
+mail($to, $subject, $msg, $headers);
+
+	 
+	 
+	 
  echo '
  <div class="row">
     <div class="text-body">
