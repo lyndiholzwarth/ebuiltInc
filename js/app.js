@@ -17,6 +17,6 @@ function drawMap() {
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title: 'eBuilt Inc'
+      title: 'EBuilt Inc'
   });
 };
